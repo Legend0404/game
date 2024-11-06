@@ -10,6 +10,7 @@
     <script>
         let rectw =30
         let p1y = 0
+        let p2y = 0
         function setup(){
             createCanvas(windowWidth,windowHeight)
             background("#009DDC")
@@ -22,14 +23,20 @@
             circle(windowWidth/2,windowHeight/2,50)
 
              //player2
-            rect(windowWidth-40,windowHeight/2-50,30,100);
+            rect(windowWidth-40,windowHeight/2-50+p2y,30,100);
         }
         function keyPressed(){
-        if (keyCode===38){
+        if (keyCode===87){
+            p1y-=30
+        }
+        if (keyCode===83){
             p1y+=30
         }
-        if (keyCode===40){
-            p1y-=30
+        if (keyCode===73){
+            p2y-=30
+        }
+        if (keyCode===75){
+            p2y+=30
         }
     }
     </script>
