@@ -8,15 +8,16 @@
 </head>
 <body>
     <script>
+        let rectw =30
         function setup(){
             createCanvas(windowWidth,windowHeight)
             background("#009DDC")
         }
         function draw(){
             fill("#2A2D34")
-            rect(0,windowHeight/2-100/2,30,100)
+            rect(0,windowHeight/2-100/2,rectw,100)
             fill("#6761A8")
-            rect(windowWidth-35,0,30,100)
+            rect(windowWidth-35,0,rectw,100)
             circle(windowWidth/2,windowHeight/2,50)
         }
     </script>
