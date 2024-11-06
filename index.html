@@ -15,6 +15,7 @@
             background("#009DDC")
         }
         function draw(){
+            background("#009DDC")
             fill("#2A2D34")
             rect(0,windowHeight/2-100/2+p1y,rectw,100)
             fill("#6761A8")
@@ -24,10 +25,10 @@
             rect(windowWidth-40,windowHeight/2-50,30,100);
         }
         function keyPressed(){
-        if (keyCode===87){
+        if (keyCode===38){
             p1y+=30
         }
-        if (keyCode===83){
+        if (keyCode===40){
             p1y-=30
         }
     }
