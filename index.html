@@ -9,20 +9,28 @@
 <body>
     <script>
         let rectw =30
+        let p1y = 0
         function setup(){
             createCanvas(windowWidth,windowHeight)
             background("#009DDC")
         }
         function draw(){
             fill("#2A2D34")
-            rect(0,windowHeight/2-100/2,rectw,100)
+            rect(0,windowHeight/2-100/2+p1y,rectw,100)
             fill("#6761A8")
-            rect(windowWidth-35,0,rectw,100)
             circle(windowWidth/2,windowHeight/2,50)
 
              //player2
             rect(windowWidth-40,windowHeight/2-50,30,100);
         }
+        function keyPressed(){
+        if (keyCode===87){
+            p1y+=30
+        }
+        if (keyCode===83){
+            p1y-=30
+        }
+    }
     </script>
 </body>
 </html>
