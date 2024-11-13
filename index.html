@@ -13,6 +13,8 @@
         let p2y = 0
         let p1score = 0
         let p2score = 0
+        let canvasx = windowWidth-40
+        let canvasy = windowHeight-40
         function setup(){
             createCanvas(windowWidth,windowHeight)
             background("#009DDC")
@@ -27,7 +29,7 @@
             circle(windowWidth/2,windowHeight/2,50)
 
              //player2
-            rect(windowWidth-40,windowHeight/2-50+p2y,30,100);
+            rect(canvasx-40,canvasy/2-50+p2y,30,100);
         }
         function keyPressed(){
         if (keyCode===87){
