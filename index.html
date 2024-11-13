@@ -13,10 +13,12 @@
         let p2y = 0
         let p1score = 0
         let p2score = 0
-        let canvasx = windowWidth-40
-        let canvasy = windowHeight-40
+        let canvasx ;
+        let canvasy ;
         function setup(){
-            createCanvas(windowWidth,windowHeight)
+            canvasx = windowWidth-50
+            canvasy = windowHeight-50
+            createCanvas(canvasx,canvasy)
             background("#009DDC")
         }
         function draw(){
