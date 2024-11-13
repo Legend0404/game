@@ -11,12 +11,16 @@
         let rectw =30
         let p1y = 0
         let p2y = 0
+        let p1score = 0
+        let p2score = 0
         function setup(){
             createCanvas(windowWidth,windowHeight)
             background("#009DDC")
         }
         function draw(){
             background("#009DDC")
+            text("score:" +p1score,10,10)
+            text("score;"+p2score,windowWidth-50,10)
             fill("#2A2D34")
             rect(0,windowHeight/2-100/2+p1y,rectw,100)
             fill("#6761A8")
