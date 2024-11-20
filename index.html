@@ -15,9 +15,13 @@
         let p2score = 0
         let canvasx ;
         let canvasy ;
+        let cirx = 0
+        let ciry = 0
         function setup(){
             canvasx = windowWidth-10
             canvasy = windowHeight-10
+            cirx = windowWidth/2
+            ciry = windowHeight/2
             createCanvas(canvasx,canvasy)
             background("#009DDC")
         }
@@ -29,7 +33,7 @@
             fill("#2A2D34")
             rect(0,windowHeight/2-100/2+p1y,rectw,100)
             fill("#6761A8")
-            circle(windowWidth/2,windowHeight/2,50)
+            circle(cirx,ciry,50)
 
              //player2
             rect(canvasx-40,canvasy/2-50+p2y,30,100);
