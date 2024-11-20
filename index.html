@@ -35,6 +35,11 @@
             fill("#6761A8")
             circle(cirx,ciry,50)
             cirx+=5
+            if(ciry > canvasy/2-50+p2y && ciry < canvasy/2-50+p2y+100){
+                if(cirx > canvasx-40){
+                    console.log("they are touching")
+                }
+            }
 
              //player2
             rect(canvasx-40,canvasy/2-50+p2y,30,100);
