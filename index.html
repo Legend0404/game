@@ -17,6 +17,7 @@
         let canvasy ;
         let cirx = 0
         let ciry = 0
+        let forward = true;
         let balldir = -1
         //add variable for ball direction make it -1 use ball direction variable aND MAKE THE BALL GO TO THE LEFT try touching logic on p1
         function setup(){
@@ -36,15 +37,21 @@
             rect(0,windowHeight/2-100/2+p1y,rectw,100)
             fill("#6761A8")
             circle(cirx,ciry,50)
-            cirx-=5
+            if(forward == true){
+                cirx+=5
+            }else{
+                cirx-=5
+            }
             if(ciry > canvasy/2-50+p2y && ciry < canvasy/2-50+p2y+100){
                 if(cirx > canvasx-40){
                     console.log("touching p2")
+                    forward = false
                 }
             }
             if(ciry > canvasy/2-50+p1y && ciry < canvasy/2-50+p1y+100){
                 if(cirx < 70){
                     console.log("touching p1")
+                    forward = true
                 }
             }
             //if(cirx > canvasy){
