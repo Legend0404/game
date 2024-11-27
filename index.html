@@ -17,6 +17,8 @@
         let canvasy ;
         let cirx = 0
         let ciry = 0
+        let balldir = 0
+        //add variable for ball direction make it -1 use ball direction variable aND MAKE THE BALL GO TO THE LEFT try touching logic on p1
         function setup(){
             canvasx = windowWidth-10
             canvasy = windowHeight-10
@@ -38,6 +40,7 @@
             if(ciry > canvasy/2-50+p2y && ciry < canvasy/2-50+p2y+100){
                 if(cirx > canvasx-40){
                     console.log("they are touching")
+                    cirx-=5
                 }
             }
 
